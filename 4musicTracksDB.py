@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET #import xml module
 import sqlite3  #be able to talk to db
 
-conn = sqlite3.connect('trackdb.sqlite')
+conn = sqlite3.connect('4trackdb.sqlite')
 cur = conn.cursor() #db handle
 
 # Make some fresh tables using executescript()
@@ -41,7 +41,7 @@ CREATE TABLE Track (
 
 fname = raw_input('Enter file name: ')  #ask for file name for xml
 if ( len(fname) < 1 ):
-    fname = 'Library.xml'
+    fname = '4Library.xml'
 
 # <key>Track ID</key><integer>369</integer>
 # <key>Name</key><string>Another One Bites The Dust</string>
